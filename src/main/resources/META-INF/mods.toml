@@ -13,14 +13,16 @@ description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
     modId="neoforge"
-    type="required"
+    type="required" # NeoForge recognises this
+    mandatory=true # Forge recognises this
     versionRange="${neo_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]
     modId="minecraft"
-    type="required"
-    versionRange="${minecraft_version_range}"
+    type="required" # NeoForge recognises this
+    mandatory=true # Forge recognises this
+    versionRange="[${minecraft_version}]"
     ordering="NONE"
     side="BOTH"
 
