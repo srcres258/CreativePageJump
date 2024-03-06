@@ -13,10 +13,10 @@ displayTest="IGNORE_ALL_VERSION"
 description='''${mod_description}'''
 
 [[dependencies.${mod_id}]]
-    modId="neoforge"
+    modId="forge"
     type="required" # NeoForge recognises this
     mandatory=true # Forge recognises this
-    versionRange="${neo_version_range}"
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
 [[dependencies.${mod_id}]]

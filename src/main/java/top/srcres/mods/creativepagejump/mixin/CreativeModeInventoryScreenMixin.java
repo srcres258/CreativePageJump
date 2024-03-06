@@ -10,8 +10,8 @@ import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.CreativeModeTab;
-import net.neoforged.neoforge.client.gui.CreativeTabsScreenPage;
-import net.neoforged.neoforge.common.CreativeModeTabRegistry;
+import net.minecraftforge.client.gui.CreativeTabsScreenPage;
+import net.minecraftforge.common.CreativeModeTabRegistry;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -58,7 +58,7 @@ public abstract class CreativeModeInventoryScreenMixin extends EffectRenderingIn
      * @reason Overwrites the original method in order to update the content within {@link #cpj$pageNumEditBox}
      *         whenever the current page changes.
      */
-    @Overwrite
+    @Overwrite(remap = false)
     public void setCurrentPage(CreativeTabsScreenPage currentPage) {
         int pageIndex = this.pages.indexOf(currentPage);
         if (pageIndex != -1) {
