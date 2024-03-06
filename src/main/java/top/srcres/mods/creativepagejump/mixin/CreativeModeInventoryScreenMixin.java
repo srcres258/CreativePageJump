@@ -11,7 +11,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.client.gui.CreativeTabsScreenPage;
-import net.minecraftforge.common.CreativeModeTabRegistry;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -19,7 +18,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import top.srcres.mods.creativepagejump.Config;
 
-import java.util.Iterator;
 import java.util.List;
 
 @Mixin(CreativeModeInventoryScreen.class)
